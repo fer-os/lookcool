@@ -5,7 +5,7 @@ do
 echo -n "-"
 sleep 0.05
 done
-echo -e "\nSetting new directory to HOME\nResetting path\nClearing cache\nLoading terminal...\nLoading made-up binary to look really cool...\033[0;32m"
+echo -e "\nSetting new directory to HOME\nResetting path\nClearing cache\nLoading terminal...\nLoading random binary to look really cool...\033[0;32m"
 fakeBinary() {
 echo -en "$(($RANDOM % 2))"
 }
