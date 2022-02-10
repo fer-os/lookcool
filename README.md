@@ -1,6 +1,5 @@
 # lookcool
 Use this if you want to look cool to people
-
 - Please note that I don't care if it doesn't look like what you normally see. It's supposed to be exactly 420 characters.
 
 ## Usage
