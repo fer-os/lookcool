@@ -10,7 +10,7 @@ done
 e -en "\r"
 for i in {1..64}
 do
-e -n "█"
+e -n █
 sleep 0.05
 done
 e -e "\nSetting new directory to HOME...\nResetting path...\nClearing cache..."
