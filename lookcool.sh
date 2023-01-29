@@ -1,21 +1,28 @@
 #!/bin/bash
-echo "Loading..."
+e() {
+echo $*
+}
+e "Loading..."
 for i in {1..64}
 do
-echo -n "-"
+e -n "-"
+done
+e -en "\r"
+for i in {1..64}
+do
+e -n "█"
 sleep 0.05
 done
-echo -e "\nSetting new directory to HOME\nResetting path\nClearing cache\nLoading terminal...\nLoading random binary to look really cool...\033[0;32m"
-fakeBinary() {
-echo -en "$(($RANDOM % 2))"
-}
+e -e "\nSetting new directory to HOME...\nResetting path...\nClearing cache..."
+sleep 0.5
+e -e "Loading random binary to look really cool...\033[0;32m"
 for i in {1..512}
 do
 for i in {1..8}
 do
-fakeBinary
+e -n "$(($RANDOM % 2))"
 done
 echo -en " "
 sleep 0.01
 done
-echo -e "\033[0m\nProgram succeeded. Exiting with code 0..."
+e -e "\033[0;1;3m\n\nI'M IN.\033[0m"
